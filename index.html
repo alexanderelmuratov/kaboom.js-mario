@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mario with Kaboom.js</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+    </style>
+    <script type="module">
+      import kaboom from "https://unpkg.com/kaboom/dist/kaboom.mjs";
+      kaboom({
+        global: true,
+        fullscreen: true,
+        scale: 2,
+        debug: true,
+        background: [0, 0, 0, 1],
+      });
+    </script>
+    <script type="module" src="./game.js"></script>
+  </head>
+  <body></body>
+</html>
